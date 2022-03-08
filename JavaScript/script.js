@@ -20,7 +20,9 @@ function checkLeapYear() {
         alert(myYear + " " + "is a leap Year");
     } else {
         alert(myYear + " " + "is not a leap Year");
+        return false;
     }
+
 }
 let form = document.getElementById('year');
 btn.addEventListener('click', function (event) {

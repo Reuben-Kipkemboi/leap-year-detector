@@ -19,3 +19,22 @@ h1 span{
     color: rgb(23, 19, 56);
     font-weight: bold;
 }
+form input[type='text']{
+    color: rgb(7, 23, 50);
+    width: 50%;
+    height: 5vh;
+    font-style: italic;
+    font-weight: bold;
+}
+form input[type='submit']{
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 50%;
+    background-color: rgb(7, 27, 75);
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+}
