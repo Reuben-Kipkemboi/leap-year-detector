@@ -1,15 +1,15 @@
 // form validation
 
-let button = document.getElementById("btn")
+let button = document.getElementById("btn");
 
-function validate() {
-    if (myYear == "" || myYear == null || myYear.length !== 4) {
-        alert("Kindly use the correct year format!");
-    } else {
+function validate(){
+    let year = document.getElementById("year")
+    if(year.value == "" || year.value == null || year.value.length !=4){
+        alert("Please enter the correct year format");
+    }else{
         return true;
     }
 }
-
 function checkLeapYear() {
     let year = document.getElementById("year");
     let myYear = year.value;
@@ -22,10 +22,9 @@ function checkLeapYear() {
         alert(myYear + " " + "is not a leap Year");
     }
 }
-btn.addEventListener('click', function (e) {
-    e.preventDefault();
-
-
-    // validate();
+let form = document.getElementById('year');
+btn.addEventListener('click', function (event) {
+    event.preventDefault();  
+    validate();
     checkLeapYear();
 });
